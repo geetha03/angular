@@ -1,0 +1,24 @@
+<div>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Student Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Date of Birth</th>
+            <th scope="col">Gender</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let student of studentsList">
+          <tr>
+            <th scope="row">{{student.id}}</th>
+            <td><a routerLink="/students" routerLinkActive="active">{{student.name}}</a></td>
+            <td>{{student.email}}</td>
+            <td>{{student.mobile}}</td>
+            <td>{{student.date_of_birth}}</td>
+            <td>{{student.gender}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
